@@ -27,11 +27,12 @@ class Components extends Component {
         <Typography variant="overline" color="textPrimary">
           Skeuomorphism
         </Typography>
-        <br />
+        <div className="horizontal-divider" />
         <IconButton icon={<CheckIcon />} onClick={this.handleCheck} />
+        <div className="vertical-divider" />
         <IconButton icon={<BlockIcon />} />
         <ExtendedButton icon={<BlockIcon />} label="Verify" />
-        <br />
+        <div className="horizontal-divider" />
         <IconButton icon={<TrackChangesIcon />} />
         <IconButton icon={<FingerprintIcon />} />
         {/* <Fab variant="extended" size="small">

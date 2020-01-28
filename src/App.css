@@ -37,3 +37,21 @@
     transform: rotate(360deg);
   }
 }
+
+.horizontal-divider {
+  box-shadow: inset 2px 2px 1px #c8ced3, inset -2px -2px 1px #ffffff;
+  width: calc(100% - 16px);
+  height: 4px;
+  border-radius: 5px;
+  margin: 8px;
+}
+
+.vertical-divider {
+  display: inline-block;
+  box-shadow: inset 2px 1px 1px #c8ced3, inset -2px -2px 1px #ffffff;
+  width: 5px;
+  border-radius: 10px;
+  margin: 8px;
+  vertical-align: middle;
+  min-height: 50px;
+}
