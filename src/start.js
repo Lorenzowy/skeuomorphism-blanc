@@ -14,6 +14,9 @@ function createWindow() {
       nodeIntegration: true
     },
     transparent: true,
+    // frame: false,
+    // titleBarStyle: "hiddenInset",
+    titleBarStyle: "customButtonsOnHover",
     frame: false
   });
 
