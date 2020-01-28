@@ -2,15 +2,36 @@
   "name": "skeuomorphism",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
+  "main": "src/start.js",
+  "build": {
+    "appId": "skeuomorphism",
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "category": "MUI Templates",
+      "iconUrl": "./icons/white_circle.png"
+    },
+    "mac": {
+      "category": "MUI Templates",
+      "iconUrl": "./icons/white_circle.png"
+    }
+  },
   "dependencies": {
+    "@material-ui/core": "^4.9.0",
+    "@material-ui/icons": "^4.5.1",
+    "@material-ui/styles": "^4.9.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
+    "electron-is-dev": "^1.1.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0"
   },
   "scripts": {
+    "electron": "electron .",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -30,5 +51,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "electron": "^7.1.10",
+    "electron-builder": "^22.3.2"
   }
 }
