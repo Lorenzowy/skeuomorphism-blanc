@@ -48,8 +48,8 @@
 
 .vertical-divider {
   display: inline-block;
-  box-shadow: inset 2px 1px 1px #c8ced3, inset -2px -2px 1px #ffffff;
-  width: 5px;
+  box-shadow: inset 2px 3px 1px #c8ced3, inset -2px -2px 1px #ffffff;
+  width: 4px;
   border-radius: 10px;
   margin: 8px;
   vertical-align: middle;
