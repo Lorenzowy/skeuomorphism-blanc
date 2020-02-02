@@ -7,16 +7,6 @@ const useStyles = makeStyles({
     width: 50,
     height: 50
   },
-  iconButton: {
-    borderRadius: "50px",
-    border: "2px solid #e6edf3cc",
-    boxShadow: "7px 7px 11px #c8ced3, -7px -7px 11px #ffffff",
-    background: "linear-gradient(145deg, #f6feff, #cfd5db)",
-    "&:hover": {
-      background: "linear-gradient(145deg, #cfd5db,#f6feff)"
-    },
-    margin: "10px"
-  },
   iconButtonClicked: {
     borderRadius: "50px",
     border: "2px solid #533092eb", //"2px solid #e6edf388",
@@ -37,12 +27,11 @@ export default function SkeuoExtendedButton(props) {
   const classes = useStyles();
 
   return (
-    <IconButton size="small" variant="extended" className={clicked ? classes.iconButtonClicked : classes.iconButton} onClick={() => setClicked(!clicked)}>
+    <IconButton size="small" variant="extended" className={clicked && classes.iconButtonClicked} onClick={() => setClicked(!clicked)}>
       {props.icon}
       <Typography className={classes.label} variant="overline">
         {props.label}
       </Typography>
-      {/* <div className={classes.icon}>{props.icon}</div> */}
     </IconButton>
   );
 }
